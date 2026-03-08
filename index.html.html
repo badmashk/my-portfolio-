@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shiv Shankar Prajapati | Stock Market Broker</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0d1b2a;
+    color:#fff;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    font-size:22px;
+    font-weight:600;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00c896;
+}
+
+/* HERO SECTION */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1640161704729-cbe966a08476') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    background:#00c896;
+    color:#fff;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.hero button:hover{
+    background:#009e74;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 60px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:40px;
+    color:#0d1b2a;
+}
+
+/* ABOUT */
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.7;
+}
+
+/* SERVICES */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0d1b2a;
+}
+
+/* MARKET SECTION */
+.market{
+    background:#e9f5ff;
+    text-align:center;
+}
+
+/* TESTIMONIALS */
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.testimonial-card{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+.contact form{
+    max-width:700px;
+    margin:auto;
+    display:grid;
+    gap:20px;
+}
+
+input, textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    width:100%;
+}
+
+button.submit-btn{
+    background:#0d1b2a;
+    color:#fff;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button.submit-btn:hover{
+    background:#00c896;
+}
+
+/* FOOTER */
+footer{
+    background:#0d1b2a;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:30px;
+    }
+    header{
+        flex-direction:column;
+    }
+    nav{
+        margin-top:10px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>Shiv Shankar Prajapati</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#market">Market</a>
+<a href="#testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Professional Stock Market Broker</h2>
+<p>Equity | Intraday | Futures | Options | Portfolio Management</p>
+<button>Start Trading Today</button>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<div class="about">
+<p>
+Shiv Shankar Prajapati is a professional stock market broker providing expert guidance in 
+equity trading, derivatives, and long-term investment planning. 
+Our mission is to help clients grow their wealth with strategic market analysis 
+and disciplined risk management.
+</p>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services-grid">
+<div class="card">
+<h3>Equity Trading</h3>
+<p>Buy and sell shares with expert research support.</p>
+</div>
+<div class="card">
+<h3>Intraday Trading</h3>
+<p>High accuracy intraday strategies with proper risk control.</p>
+</div>
+<div class="card">
+<h3>Futures & Options</h3>
+<p>Advanced derivative trading techniques.</p>
+</div>
+<div class="card">
+<h3>Portfolio Management</h3>
+<p>Long-term wealth creation and asset diversification.</p>
+</div>
+</div>
+</section>
+
+<section id="market" class="market">
+<h2 class="section-title">Daily Market Insights</h2>
+<p>Get regular updates on market trends, stock recommendations, and trading strategies.</p>
+</section>
+
+<section id="testimonials">
+<h2 class="section-title">Client Testimonials</h2>
+<div class="testimonials">
+<div class="testimonial-card">
+<p>"Excellent guidance and profitable strategies. Highly recommended!"</p>
+<h4>- Rahul Mehta</h4>
+</div>
+<div class="testimonial-card">
+<p>"Very professional and transparent trading advice."</p>
+<h4>- Ankit Sharma</h4>
+</div>
+<div class="testimonial-card">
+<p>"Helped me build long-term wealth through disciplined investing."</p>
+<h4>- Priya Verma</h4>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<div class="contact">
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="submit-btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+© 2026 Shiv Shankar Prajapati | Stock Market Broker | All Rights Reserved
+</footer>
+
+</body>
+</html>
